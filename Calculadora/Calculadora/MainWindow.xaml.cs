@@ -25,12 +25,6 @@ namespace Calculadora
 
             if (in_out.Text == "Error") in_out.Text = "";
 
-            // Si el text és "0" i s'escriu un número o operador, esborra el 0 primer
-            if (in_out.Text == "0")
-            {
-                in_out.Text = "";
-            }
-
             // Només permet dígits i operadors
             e.Handled = !Regex.IsMatch(e.Text, @"^[0-9\+\-\*\/]$");
         }
@@ -56,7 +50,7 @@ namespace Calculadora
                 in_out.FontSize = 50;
             else if (in_out.Text.Length < 10)
                 in_out.FontSize = 35;
-            else if (in_out.Text.Length < 14)
+            else if (in_out.Text.Length < 20)
                 in_out.FontSize = 25;
             else
                 in_out.FontSize = 18;
@@ -84,7 +78,6 @@ namespace Calculadora
             Button btn = (Button)sender;
 
             if (in_out.Text == "Error") in_out.Text = "";
-            if (in_out.Text == "0") in_out.Text = "";
 
             string operador = btn.Tag.ToString() ?? "0";
             in_out.Text += operador.ToString();
@@ -108,11 +101,14 @@ namespace Calculadora
                     return;
                 }
 
-                in_out.Text = result.ToString();
+                // Força el punt com a separador decimal
+                in_out.Text = result.ToString(System.Globalization.CultureInfo.InvariantCulture);
+                in_out.CaretIndex = in_out.Text.Length;
             }
             catch
             {
                 in_out.Text = "Error";
+                in_out.CaretIndex = in_out.Text.Length;
             }
         }
 
