@@ -74,6 +74,8 @@ El projecte **"Calculadora"** és una aplicació interactiva que permet realitza
 
 ## 📦 Guia d’Instal·lació
 
+### Calculadora
+
 1. Clona o descarrega el repositori.
 ```
 git clone https://github.com/AbrilVilalta/Calculadora.git
@@ -82,6 +84,12 @@ git clone https://github.com/AbrilVilalta/Calculadora.git
 4. Ves a `Fitxer` → `Obre` → `Projecte/Solució`.
 5. Selecciona el fitxer `Calculadora.sln`.
 6. Clica el botó **Iniciar** o prem `F5` per executar.
+
+### Doxygen
+
+1. Accedeix al directori `Calculadora`.
+2. Busca l'arxiu `ObrirDoxygen.bat` .
+3. Executa'l.
 
 ## 🧭 Guia d’ús amb explicació pas a pas
 
