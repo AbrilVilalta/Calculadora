@@ -1,11 +1,32 @@
 {
   "version": 4,
   "targets": {
-    "net8.0-windows": {}
+    "net8.0-windows": {
+      "Doxygen/1.8.14": {
+        "type": "package"
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Doxygen/1.8.14": {
+      "sha512": "2a9Cx5QwwZC3D5tFvRQdSNdjVSIA7INtnHbxq9ogkrbkTBI5XZiS0oI5cln6aNL3M1YuVbGZL2YHIMThbVJRwQ==",
+      "type": "package",
+      "path": "doxygen/1.8.14",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "doxygen.1.8.14.nupkg.sha512",
+        "doxygen.nuspec",
+        "tools/doxygen.exe",
+        "tools/libclang.dll"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0-windows": []
+    "net8.0-windows": [
+      "Doxygen >= 1.8.14"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\PC\\.nuget\\packages\\": {},
@@ -59,6 +80,14 @@
       "net8.0-windows": {
         "framework": "net8.0-windows7.0",
         "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "Doxygen": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.8.14, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
