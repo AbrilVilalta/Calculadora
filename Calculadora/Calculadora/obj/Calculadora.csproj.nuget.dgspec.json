@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Documents\\GitHub\\Calculadora (PAC 4)\\Calculadora\\Calculadora\\Calculadora.csproj": {}
+    "C:\\Users\\PC\\Documents\\GitHub\\Calculadora\\Calculadora\\Calculadora\\Calculadora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Documents\\GitHub\\Calculadora (PAC 4)\\Calculadora\\Calculadora\\Calculadora.csproj": {
+    "C:\\Users\\PC\\Documents\\GitHub\\Calculadora\\Calculadora\\Calculadora\\Calculadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\Calculadora (PAC 4)\\Calculadora\\Calculadora\\Calculadora.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\Calculadora\\Calculadora\\Calculadora\\Calculadora.csproj",
         "projectName": "Calculadora",
-        "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Calculadora (PAC 4)\\Calculadora\\Calculadora\\Calculadora.csproj",
+        "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Calculadora\\Calculadora\\Calculadora\\Calculadora.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\Calculadora (PAC 4)\\Calculadora\\Calculadora\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\Calculadora\\Calculadora\\Calculadora\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -46,7 +46,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0-windows": {
@@ -71,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
