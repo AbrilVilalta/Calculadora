@@ -95,6 +95,12 @@ git clone https://github.com/AbrilVilalta/Calculadora.git
 
 ## Exemples d’ús i Captures de Pantalla
 
+<p align="center">
+  <a href="Calculadora/Calculadora/Assets/calculadora.gif">
+    <img src="Calculadora/Calculadora/Assets/calculadora.gif" alt="Exemple d'ús" height="500"/>
+  </a>
+</p>
+
 ## Conclusions i reflexions sobre el projecte
 
 El desenvolupament d'aquesta calculadora ens ha permès posar en pràctica els conceptes
