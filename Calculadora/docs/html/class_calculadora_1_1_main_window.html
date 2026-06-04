@@ -94,6 +94,9 @@ $(document).ready(function(){initNavTree('class_calculadora_1_1_main_window.html
 <div class="title">Calculadora.MainWindow Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Finestra principal de l'aplicació <a class="el" href="namespace_calculadora.html">Calculadora</a>. Gestiona la interfície d'usuari i la comunicació amb el nucli lògic CalculadoraCore.  
+ <a href="class_calculadora_1_1_main_window.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Calculadora.MainWindow:</div>
 <div class="dyncontent">
@@ -106,45 +109,42 @@ Inheritance diagram for Calculadora.MainWindow:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad3f2ffcd46975c760a313b2b789448c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculadora_1_1_main_window.html#ad3f2ffcd46975c760a313b2b789448c9">MainWindow</a> ()</td></tr>
-<tr class="memdesc:ad3f2ffcd46975c760a313b2b789448c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicialitza els components de la finestra principal.  <a href="#ad3f2ffcd46975c760a313b2b789448c9">More...</a><br /></td></tr>
+<tr class="memdesc:ad3f2ffcd46975c760a313b2b789448c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicialitza els components de la finestra principal i crea una nova instància de CalculadoraCore.  <a href="#ad3f2ffcd46975c760a313b2b789448c9">More...</a><br /></td></tr>
 <tr class="separator:ad3f2ffcd46975c760a313b2b789448c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a08d54cbb570e60fb55bdebcc86fcb11f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculadora_1_1_main_window.html#a08d54cbb570e60fb55bdebcc86fcb11f">TextBox_Loaded</a> (object sender, RoutedEventArgs e)</td></tr>
-<tr class="memdesc:a08d54cbb570e60fb55bdebcc86fcb11f"><td class="mdescLeft">&#160;</td><td class="mdescRight">S'executa quan el TextBox es carrega. Posa el focus al camp d'entrada.  <a href="#a08d54cbb570e60fb55bdebcc86fcb11f">More...</a><br /></td></tr>
+<tr class="memdesc:a08d54cbb570e60fb55bdebcc86fcb11f"><td class="mdescLeft">&#160;</td><td class="mdescRight">S'executa quan el System.Windows.Controls.TextBox es carrega. Posa el focus al camp d'entrada i situa el cursor al final del text.  <a href="#a08d54cbb570e60fb55bdebcc86fcb11f">More...</a><br /></td></tr>
 <tr class="separator:a08d54cbb570e60fb55bdebcc86fcb11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a873c7f281f9ad111ac01ede9bda67789"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculadora_1_1_main_window.html#a873c7f281f9ad111ac01ede9bda67789">TextBox_PreviewTextInput</a> (object sender, TextCompositionEventArgs e)</td></tr>
-<tr class="memdesc:a873c7f281f9ad111ac01ede9bda67789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valida l'entrada de text abans d'inserir-la. Només permet dígits i operadors bàsics.  <a href="#a873c7f281f9ad111ac01ede9bda67789">More...</a><br /></td></tr>
+<tr class="memdesc:a873c7f281f9ad111ac01ede9bda67789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valida l'entrada de text abans d'inserir-la al camp. Només permet dígits, operadors bàsics i símbols matemàtics admesos. Si el camp conté "Error" o "0", el neteja abans d'inserir el nou caràcter.  <a href="#a873c7f281f9ad111ac01ede9bda67789">More...</a><br /></td></tr>
 <tr class="separator:a873c7f281f9ad111ac01ede9bda67789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeb9314ba4769b041b122d899fc47ffd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculadora_1_1_main_window.html#afeb9314ba4769b041b122d899fc47ffd">TextBox_PreviewKeyDown</a> (object sender, KeyEventArgs e)</td></tr>
-<tr class="memdesc:afeb9314ba4769b041b122d899fc47ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detecta la tecla Enter per executar el càlcul.  <a href="#afeb9314ba4769b041b122d899fc47ffd">More...</a><br /></td></tr>
+<tr class="memdesc:afeb9314ba4769b041b122d899fc47ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detecta la tecla <code>Enter</code> per executar el càlcul, equivalent a prémer el botó "=".  <a href="#afeb9314ba4769b041b122d899fc47ffd">More...</a><br /></td></tr>
 <tr class="separator:afeb9314ba4769b041b122d899fc47ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06e463863862aec6d634679f3794f9a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculadora_1_1_main_window.html#a06e463863862aec6d634679f3794f9a0">TextBox_TextChanged</a> (object sender, TextChangedEventArgs e)</td></tr>
-<tr class="memdesc:a06e463863862aec6d634679f3794f9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manté el cursor sempre al final del text quan canvia el contingut.  <a href="#a06e463863862aec6d634679f3794f9a0">More...</a><br /></td></tr>
+<tr class="memdesc:a06e463863862aec6d634679f3794f9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">S'executa cada vegada que el text del camp canvia. Manté el cursor al final del text en tot moment.  <a href="#a06e463863862aec6d634679f3794f9a0">More...</a><br /></td></tr>
 <tr class="separator:a06e463863862aec6d634679f3794f9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a955845ad195d7c4e9a4955a371677784"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculadora_1_1_main_window.html#a955845ad195d7c4e9a4955a371677784">in_out_TextChanged</a> (object sender, TextChangedEventArgs e)</td></tr>
-<tr class="memdesc:a955845ad195d7c4e9a4955a371677784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajusta la mida de la font dinàmicament segons la longitud del text.  <a href="#a955845ad195d7c4e9a4955a371677784">More...</a><br /></td></tr>
+<tr class="memdesc:a955845ad195d7c4e9a4955a371677784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajusta dinàmicament la mida de la font del camp d'entrada segons la longitud del text, per evitar desbordaments visuals.  <a href="#a955845ad195d7c4e9a4955a371677784">More...</a><br /></td></tr>
 <tr class="separator:a955845ad195d7c4e9a4955a371677784"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3b928082c20327b9ce1b78ffe5d7278"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculadora_1_1_main_window.html#aa3b928082c20327b9ce1b78ffe5d7278">NumeroClick</a> (object sender, RoutedEventArgs e)</td></tr>
-<tr class="memdesc:aa3b928082c20327b9ce1b78ffe5d7278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Afegeix el dígit del botó premut al camp d'entrada.  <a href="#aa3b928082c20327b9ce1b78ffe5d7278">More...</a><br /></td></tr>
-<tr class="separator:aa3b928082c20327b9ce1b78ffe5d7278"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cfc95799bad2ae27f23b5376fce4696"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculadora_1_1_main_window.html#a8cfc95799bad2ae27f23b5376fce4696">OperacioClick</a> (object sender, RoutedEventArgs e)</td></tr>
-<tr class="memdesc:a8cfc95799bad2ae27f23b5376fce4696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Afegeix l'operador del botó premut al camp d'entrada.  <a href="#a8cfc95799bad2ae27f23b5376fce4696">More...</a><br /></td></tr>
-<tr class="separator:a8cfc95799bad2ae27f23b5376fce4696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0a714a7e75decc6da5587d025dd05a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculadora_1_1_main_window.html#ae0a714a7e75decc6da5587d025dd05a9">WipeOut</a> (object sender, RoutedEventArgs e)</td></tr>
-<tr class="memdesc:ae0a714a7e75decc6da5587d025dd05a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Esborra tot el contingut del camp d'entrada i el text d'operació.  <a href="#ae0a714a7e75decc6da5587d025dd05a9">More...</a><br /></td></tr>
-<tr class="separator:ae0a714a7e75decc6da5587d025dd05a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfbdda65da7f770f095e86aae00e4b3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculadora_1_1_main_window.html#adfbdda65da7f770f095e86aae00e4b3a">BotoClick</a> (object sender, RoutedEventArgs e)</td></tr>
+<tr class="memdesc:adfbdda65da7f770f095e86aae00e4b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gestiona el clic de qualsevol botó numèric o d'operació. Llegeix el valor del <code>Tag</code> del botó, l'envia al nucli lògic i actualitza la pantalla amb el resultat. Si es prem "C", també neteja el text secundari de l'operació.  <a href="#adfbdda65da7f770f095e86aae00e4b3a">More...</a><br /></td></tr>
+<tr class="separator:adfbdda65da7f770f095e86aae00e4b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf92c284f0a1704f93a00ed5d57ef81a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculadora_1_1_main_window.html#aaf92c284f0a1704f93a00ed5d57ef81a">IgualClick</a> (object sender, RoutedEventArgs e)</td></tr>
-<tr class="memdesc:aaf92c284f0a1704f93a00ed5d57ef81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Avalua l'expressió matemàtica del camp d'entrada i mostra el resultat. Mostra "Error" si l'expressió és invàlida o el resultat és infinit o NaN.  <a href="#aaf92c284f0a1704f93a00ed5d57ef81a">More...</a><br /></td></tr>
+<tr class="memdesc:aaf92c284f0a1704f93a00ed5d57ef81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gestiona el clic del botó "=" o la tecla <code>Enter</code>. Copia l'expressió actual al text secundari, l'envia al nucli lògic per calcular-la i mostra el resultat al camp principal.  <a href="#aaf92c284f0a1704f93a00ed5d57ef81a">More...</a><br /></td></tr>
 <tr class="separator:aaf92c284f0a1704f93a00ed5d57ef81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aa8661746c9abdcce4b115d3a5e0ce825"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculadora_1_1_main_window.html#aa8661746c9abdcce4b115d3a5e0ce825">result</a></td></tr>
-<tr class="separator:aa8661746c9abdcce4b115d3a5e0ce825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8290e0808715c9519e1ecba09b9995e2"><td class="memItemLeft" align="right" valign="top">CalculadoraCore&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculadora_1_1_main_window.html#a8290e0808715c9519e1ecba09b9995e2">calculadora</a></td></tr>
+<tr class="memdesc:a8290e0808715c9519e1ecba09b9995e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instància del nucli lògic de la calculadora.  <a href="#a8290e0808715c9519e1ecba09b9995e2">More...</a><br /></td></tr>
+<tr class="separator:a8290e0808715c9519e1ecba09b9995e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Finestra principal de l'aplicació <a class="el" href="namespace_calculadora.html">Calculadora</a>. Gestiona la interfície d'usuari i la comunicació amb el nucli lògic CalculadoraCore. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad3f2ffcd46975c760a313b2b789448c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3f2ffcd46975c760a313b2b789448c9">&#9670;&nbsp;</a></span>MainWindow()</h2>
 
@@ -168,11 +168,56 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Inicialitza els components de la finestra principal. </p>
+<p>Inicialitza els components de la finestra principal i crea una nova instància de CalculadoraCore. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="adfbdda65da7f770f095e86aae00e4b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfbdda65da7f770f095e86aae00e4b3a">&#9670;&nbsp;</a></span>BotoClick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Calculadora.MainWindow.BotoClick </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RoutedEventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gestiona el clic de qualsevol botó numèric o d'operació. Llegeix el valor del <code>Tag</code> del botó, l'envia al nucli lògic i actualitza la pantalla amb el resultat. Si es prem "C", també neteja el text secundari de l'operació. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>El botó que ha estat premut.</td></tr>
+    <tr><td class="paramname">e</td><td>Arguments de l'event de clic.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aaf92c284f0a1704f93a00ed5d57ef81a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf92c284f0a1704f93a00ed5d57ef81a">&#9670;&nbsp;</a></span>IgualClick()</h2>
 
@@ -207,10 +252,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Avalua l'expressió matemàtica del camp d'entrada i mostra el resultat. Mostra "Error" si l'expressió és invàlida o el resultat és infinit o NaN. </p>
+<p>Gestiona el clic del botó "=" o la tecla <code>Enter</code>. Copia l'expressió actual al text secundari, l'envia al nucli lògic per calcular-la i mostra el resultat al camp principal. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sender</td><td>El botó "=" o la tecla Enter.</td></tr>
+    <tr><td class="paramname">sender</td><td>L'objecte que ha llançat l'event.</td></tr>
     <tr><td class="paramname">e</td><td>Arguments de l'event.</td></tr>
   </table>
   </dd>
@@ -252,101 +297,21 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Ajusta la mida de la font dinàmicament segons la longitud del text. </p>
+<p>Ajusta dinàmicament la mida de la font del camp d'entrada segons la longitud del text, per evitar desbordaments visuals. </p>
+<p>Escala de mides aplicada: </p><ul>
+<li>
+Menys de 6 caràcters → 50px </li>
+<li>
+Menys de 10 caràcters → 35px </li>
+<li>
+Menys de 20 caràcters → 25px </li>
+<li>
+20 o més caràcters → 18px </li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sender</td><td>L'objecte que ha llançat l'event.</td></tr>
     <tr><td class="paramname">e</td><td>Arguments del canvi de text.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa3b928082c20327b9ce1b78ffe5d7278"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3b928082c20327b9ce1b78ffe5d7278">&#9670;&nbsp;</a></span>NumeroClick()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Calculadora.MainWindow.NumeroClick </td>
-          <td>(</td>
-          <td class="paramtype">object&#160;</td>
-          <td class="paramname"><em>sender</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RoutedEventArgs&#160;</td>
-          <td class="paramname"><em>e</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Afegeix el dígit del botó premut al camp d'entrada. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sender</td><td>El botó numèric premut.</td></tr>
-    <tr><td class="paramname">e</td><td>Arguments de l'event.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a8cfc95799bad2ae27f23b5376fce4696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cfc95799bad2ae27f23b5376fce4696">&#9670;&nbsp;</a></span>OperacioClick()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Calculadora.MainWindow.OperacioClick </td>
-          <td>(</td>
-          <td class="paramtype">object&#160;</td>
-          <td class="paramname"><em>sender</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RoutedEventArgs&#160;</td>
-          <td class="paramname"><em>e</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Afegeix l'operador del botó premut al camp d'entrada. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sender</td><td>El botó d'operació premut.</td></tr>
-    <tr><td class="paramname">e</td><td>Arguments de l'event.</td></tr>
   </table>
   </dd>
 </dl>
@@ -387,7 +352,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>S'executa quan el TextBox es carrega. Posa el focus al camp d'entrada. </p>
+<p>S'executa quan el System.Windows.Controls.TextBox es carrega. Posa el focus al camp d'entrada i situa el cursor al final del text. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sender</td><td>L'objecte que ha llançat l'event.</td></tr>
@@ -432,7 +397,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Detecta la tecla Enter per executar el càlcul. </p>
+<p>Detecta la tecla <code>Enter</code> per executar el càlcul, equivalent a prémer el botó "=". </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sender</td><td>L'objecte que ha llançat l'event.</td></tr>
@@ -477,7 +442,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Valida l'entrada de text abans d'inserir-la. Només permet dígits i operadors bàsics. </p>
+<p>Valida l'entrada de text abans d'inserir-la al camp. Només permet dígits, operadors bàsics i símbols matemàtics admesos. Si el camp conté "Error" o "0", el neteja abans d'inserir el nou caràcter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sender</td><td>L'objecte que ha llançat l'event.</td></tr>
@@ -522,7 +487,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Manté el cursor sempre al final del text quan canvia el contingut. </p>
+<p>S'executa cada vegada que el text del camp canvia. Manté el cursor al final del text en tot moment. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sender</td><td>L'objecte que ha llançat l'event.</td></tr>
@@ -533,54 +498,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae0a714a7e75decc6da5587d025dd05a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0a714a7e75decc6da5587d025dd05a9">&#9670;&nbsp;</a></span>WipeOut()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Calculadora.MainWindow.WipeOut </td>
-          <td>(</td>
-          <td class="paramtype">object&#160;</td>
-          <td class="paramname"><em>sender</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RoutedEventArgs&#160;</td>
-          <td class="paramname"><em>e</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Esborra tot el contingut del camp d'entrada i el text d'operació. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sender</td><td>El botó d'esborrar premut.</td></tr>
-    <tr><td class="paramname">e</td><td>Arguments de l'event.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="aa8661746c9abdcce4b115d3a5e0ce825"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8661746c9abdcce4b115d3a5e0ce825">&#9670;&nbsp;</a></span>result</h2>
+<a id="a8290e0808715c9519e1ecba09b9995e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8290e0808715c9519e1ecba09b9995e2">&#9670;&nbsp;</a></span>calculadora</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -589,7 +509,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double Calculadora.MainWindow.result</td>
+          <td class="memname">CalculadoraCore Calculadora.MainWindow.calculadora</td>
         </tr>
       </table>
   </td>
@@ -599,10 +519,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Instància del nucli lògic de la calculadora. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Calculadora/<a class="el" href="_main_window_8xaml_8cs.html">MainWindow.xaml.cs</a></li>
+<li>Calculadora/Views/<a class="el" href="_main_window_8xaml_8cs.html">MainWindow.xaml.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

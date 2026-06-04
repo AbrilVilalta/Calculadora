@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mainwindow_2examl_2ecs',['MainWindow.xaml.cs',['../_main_window_8xaml_8cs.html',1,'']]]
+  ['calculadoracore_2ecs',['CalculadoraCore.cs',['../_calculadora_core_8cs.html',1,'']]]
 ];

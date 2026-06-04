@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['numeroclick',['NumeroClick',['../class_calculadora_1_1_main_window.html#aa3b928082c20327b9ce1b78ffe5d7278',1,'Calculadora::MainWindow']]]
+  ['mainwindow',['MainWindow',['../class_calculadora_1_1_main_window.html#ad3f2ffcd46975c760a313b2b789448c9',1,'Calculadora::MainWindow']]]
 ];

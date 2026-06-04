@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['mainwindow',['MainWindow',['../class_calculadora_1_1_main_window.html',1,'Calculadora.MainWindow'],['../class_calculadora_1_1_main_window.html#ad3f2ffcd46975c760a313b2b789448c9',1,'Calculadora.MainWindow.MainWindow()']]],
-  ['mainwindow_2examl_2ecs',['MainWindow.xaml.cs',['../_main_window_8xaml_8cs.html',1,'']]]
+  ['igualclick',['IgualClick',['../class_calculadora_1_1_main_window.html#aaf92c284f0a1704f93a00ed5d57ef81a',1,'Calculadora::MainWindow']]],
+  ['in_5fout_5ftextchanged',['in_out_TextChanged',['../class_calculadora_1_1_main_window.html#a955845ad195d7c4e9a4955a371677784',1,'Calculadora::MainWindow']]]
 ];
