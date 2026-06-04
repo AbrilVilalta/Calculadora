@@ -62,14 +62,17 @@ El projecte **"Calculadora"** és una aplicació interactiva que permet realitza
   - ➕ **Suma**: Addició de dos o més números.
   - ➖ **Resta**: Subtracció de dos o més números.
   - ✖️ **Multiplicació**: Multiplicació de dos o més números.
-  - ➗**Divisió**: Divisió de dos números.
+  - ➗ **Divisió**: Divisió de dos números.
+  -  √ **Arrel quadrada**: Operació que troba un número que, multiplicat per si mateix, dóna el número original.
+  -  ∧ **Potencia**: Multiplicació d'un número (la base) per si mateix tantes vegades com indica un altre número (l'exponent).
 - **Operacions encadenades**:
   -  🔗 Permet fer càlculs com 1+3-4 seguits.
-  - 📐 **Prioritat d'operadors**: Respecta l'ordre matemàtic (*, / abans que +, -).
+  - 📐 **Prioritat d'operadors**: Respecta l'ordre matemàtic (*, / abans que +, - ...).
 - **Entrada**:
   - ⌨️ **Entrada per teclat**: Operar directament amb el teclat físic.
   - 🖱️**Entrada per botons**: Operar fent clic als botons de la pantalla.
 - 🧹 **Boto de neteja**: Boto que neteja la pantalla
+- `()` **Implementació de parenesis**: otons que permeten agrupar operacions per donar-los prioritat en el càlcul.
 - 🚫 **Divisió per zero**: Gestió d'errors en dividir per zero
 
 ## 📦 Guia d’Instal·lació
@@ -94,10 +97,11 @@ git clone https://github.com/AbrilVilalta/Calculadora.git
 ## 🧭 Guia d’ús amb explicació pas a pas
 
 1. 🔢 **Introdueix el primer número** fent clic als botons o usant el teclat
-2. ➕ **Selecciona l'operació** (`+`, `-`, `*`, `/`)
-3. 🔢 **Introdueix el segon número**
-4. ↪️ **Prem `=`** o la tecla `Enter` per obtenir el resultat
-5. 🧹 **Prem `C`** per netejar i fer un nou càlcul
+2. ➕ **Selecciona l'operació** (`+`, `-`, `*`, `/`, `^`, `√`)
+3. `()` Utilitza els parèntesis ( ) si vols donar prioritat a una part concreta del càlcul, mantenint-la al seu interior.
+4. 🔢 **Introdueix el segon número**
+5. ↪️ **Prem `=`** o la tecla `Enter` per obtenir el resultat
+6. 🧹 **Prem `C`** per netejar i fer un nou càlcul
 
 > 🟡 **Notes**: Pots encadenar operacions sense necessitat de prémer `=` entre cada una.
 
@@ -111,6 +115,4 @@ git clone https://github.com/AbrilVilalta/Calculadora.git
 
 ## 🧠 Conclusions i reflexions sobre el projecte
 
-El desenvolupament d'aquesta calculadora ens ha permès posar en pràctica els conceptes
-apresos durant el curs, com ara la creació d'interfícies gràfiques amb XAML i la lògica
-de programació amb C#.
+Com a conclusió, fer aquesta calculadora m'ha servit per aplicar de manera directa el que he après durant el curs i polir detalls de la lògica en C# i XAML. La veritat és que el punt on vaig haver de pensar una mica més va ser a l'hora de programar el comportament de les arrels quadrades i les potències perquè fessin exactament el que tocava. Al final, ha estat un bon exercici per tancar el bloc i tenir una aplicació totalment funcional.
