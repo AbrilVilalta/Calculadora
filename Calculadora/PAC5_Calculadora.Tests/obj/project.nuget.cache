@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "dgSpecHash": "1UaLKcu4WFc=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\PC\\Documents\\GitHub\\Calculadora\\Calculadora\\PAC5_Calculadora.Tests\\PAC5_Calculadora.Tests.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "No se puede resolver 'xunit.runner.visualstudio (>= 2.5.3)' para 'net8.0'. PackageSourceMapping está habilitado. No se tuvieron en cuenta los siguientes orígenes: Microsoft Visual Studio Offline Packages, nuget.org, nuget.org2.",
+      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Calculadora\\Calculadora\\PAC5_Calculadora.Tests\\PAC5_Calculadora.Tests.csproj",
+      "filePath": "C:\\Users\\PC\\Documents\\GitHub\\Calculadora\\Calculadora\\PAC5_Calculadora.Tests\\PAC5_Calculadora.Tests.csproj",
+      "libraryId": "xunit.runner.visualstudio",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "No se puede resolver 'Microsoft.NET.Test.Sdk (>= 17.8.0)' para 'net8.0'. PackageSourceMapping está habilitado. No se tuvieron en cuenta los siguientes orígenes: Microsoft Visual Studio Offline Packages, nuget.org, nuget.org2.",
+      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Calculadora\\Calculadora\\PAC5_Calculadora.Tests\\PAC5_Calculadora.Tests.csproj",
+      "filePath": "C:\\Users\\PC\\Documents\\GitHub\\Calculadora\\Calculadora\\PAC5_Calculadora.Tests\\PAC5_Calculadora.Tests.csproj",
+      "libraryId": "Microsoft.NET.Test.Sdk",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "No se puede resolver 'xunit (>= 2.5.3)' para 'net8.0'. PackageSourceMapping está habilitado. No se tuvieron en cuenta los siguientes orígenes: Microsoft Visual Studio Offline Packages, nuget.org, nuget.org2.",
+      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Calculadora\\Calculadora\\PAC5_Calculadora.Tests\\PAC5_Calculadora.Tests.csproj",
+      "filePath": "C:\\Users\\PC\\Documents\\GitHub\\Calculadora\\Calculadora\\PAC5_Calculadora.Tests\\PAC5_Calculadora.Tests.csproj",
+      "libraryId": "xunit",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "No se puede resolver 'coverlet.collector (>= 6.0.0)' para 'net8.0'. PackageSourceMapping está habilitado. No se tuvieron en cuenta los siguientes orígenes: Microsoft Visual Studio Offline Packages, nuget.org, nuget.org2.",
+      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Calculadora\\Calculadora\\PAC5_Calculadora.Tests\\PAC5_Calculadora.Tests.csproj",
+      "filePath": "C:\\Users\\PC\\Documents\\GitHub\\Calculadora\\Calculadora\\PAC5_Calculadora.Tests\\PAC5_Calculadora.Tests.csproj",
+      "libraryId": "coverlet.collector",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

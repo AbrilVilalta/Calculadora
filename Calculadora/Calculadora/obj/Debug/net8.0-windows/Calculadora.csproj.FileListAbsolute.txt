@@ -40,6 +40,6 @@ C:\Users\PC\Documents\GitHub\Calculadora (PAC 4)\Calculadora\Calculadora\obj\Deb
 C:\Users\PC\Documents\GitHub\Calculadora (PAC 4)\Calculadora\Calculadora\obj\Debug\net8.0-windows\Calculadora.pdb
 C:\Users\PC\Documents\GitHub\Calculadora (PAC 4)\Calculadora\Calculadora\obj\Debug\net8.0-windows\Calculadora.genruntimeconfig.cache
 C:\Users\PC\Documents\GitHub\Calculadora (PAC 4)\Calculadora\Calculadora\obj\Debug\net8.0-windows\ref\Calculadora.dll
-C:\Users\PC\Documents\GitHub\Calculadora\Calculadora\Calculadora\obj\Debug\net8.0-windows\MainWindow.g.cs
-C:\Users\PC\Documents\GitHub\Calculadora\Calculadora\Calculadora\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\PC\Documents\GitHub\Calculadora\Calculadora\Calculadora\bin\Debug\net8.0-windows\PAC4-CalculadoraDoc.xml
+C:\Users\PC\Documents\GitHub\Calculadora\Calculadora\Calculadora\obj\Debug\net8.0-windows\Views\MainWindow.g.cs
+C:\Users\PC\Documents\GitHub\Calculadora\Calculadora\Calculadora\obj\Debug\net8.0-windows\Views\MainWindow.baml

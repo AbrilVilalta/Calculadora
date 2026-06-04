@@ -27,6 +27,39 @@
             MainWindow
             </summary>
         </member>
+        <member name="M:Calculadora.MainWindow.#ctor">
+            <summary>
+            Inicialitza els components de la finestra principal.
+            </summary>
+        </member>
+        <member name="M:Calculadora.MainWindow.TextBox_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            S'executa quan el TextBox es carrega. Posa el focus al camp d'entrada.
+            </summary>
+            <param name="sender">L'objecte que ha llançat l'event.</param>
+            <param name="e">Arguments de l'event.</param>
+        </member>
+        <member name="M:Calculadora.MainWindow.TextBox_PreviewTextInput(System.Object,System.Windows.Input.TextCompositionEventArgs)">
+            <summary>
+            Valida l'entrada de text abans d'inserir-la. Només permet dígits i operadors bàsics.
+            </summary>
+            <param name="sender">L'objecte que ha llançat l'event.</param>
+            <param name="e">Arguments de composició de text.</param>
+        </member>
+        <member name="M:Calculadora.MainWindow.TextBox_PreviewKeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Detecta la tecla Enter per executar el càlcul.
+            </summary>
+            <param name="sender">L'objecte que ha llançat l'event.</param>
+            <param name="e">Arguments de la tecla premuda.</param>
+        </member>
+        <member name="M:Calculadora.MainWindow.in_out_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
+            <summary>
+            Ajusta la mida de la font dinàmicament segons la longitud del text.
+            </summary>
+            <param name="sender">L'objecte que ha llançat l'event.</param>
+            <param name="e">Arguments del canvi de text.</param>
+        </member>
         <member name="M:Calculadora.MainWindow.InitializeComponent">
             <summary>
             InitializeComponent
