@@ -1,0 +1,6 @@
+C:\Users\PC\Documents\GitHub\Calculadora\Calculadora\Calculadora\bin\Debug\net8.0-windows\publish\Calculadora.exe
+C:\Users\PC\Documents\GitHub\Calculadora\Calculadora\Calculadora\bin\Debug\net8.0-windows\publish\Calculadora.dll
+C:\Users\PC\Documents\GitHub\Calculadora\Calculadora\Calculadora\bin\Debug\net8.0-windows\publish\Calculadora.runtimeconfig.json
+C:\Users\PC\Documents\GitHub\Calculadora\Calculadora\Calculadora\bin\Debug\net8.0-windows\publish\Calculadora.pdb
+C:\Users\PC\Documents\GitHub\Calculadora\Calculadora\Calculadora\bin\Debug\net8.0-windows\publish\PAC4-CalculadoraDoc.xml
+C:\Users\PC\Documents\GitHub\Calculadora\Calculadora\Calculadora\bin\Debug\net8.0-windows\publish\Calculadora.deps.json

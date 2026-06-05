@@ -1,4 +1,7 @@
 <Solution>
   <Project Path="Calculadora/Calculadora.csproj" />
+  <Project Path="PAC5_Calculadora.Installer/PAC5_Calculadora.Installer.vdproj" Type="Installer">
+    <Build />
+  </Project>
   <Project Path="PAC5_Calculadora.Tests/PAC5_Calculadora.Tests.csproj" Id="b2ed5f0e-4931-466b-9649-a9f1aff0367f" />
 </Solution>

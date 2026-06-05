@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Calculadora</name>
+    </assembly>
+    <members>
+        <member name="T:Calculadora.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:Calculadora.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Calculadora.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:Calculadora.Models.CalculadoraCore">
+            <summary>
+            Nucli lògic de la calculadora.
+            Gestiona l'entrada d'operacions i el càlcul de resultats,
+            incloent suport per a potències (<c>**</c>) i arrels quadrades (<c>√</c>).
+            </summary>
+        </member>
+        <member name="P:Calculadora.Models.CalculadoraCore.Operacio">
+            <summary>
+            Expressió matemàtica actual que s'està construint o que s'ha calculat.
+            Es pot llegir i modificar des de fora de la classe.
+            </summary>
+        </member>
+        <member name="F:Calculadora.Models.CalculadoraCore.resultat">
+            <summary>
+            Valor numèric del darrer resultat calculat.
+            </summary>
+        </member>
+        <member name="M:Calculadora.Models.CalculadoraCore.#ctor">
+            <summary>
+            Inicialitza una nova instància de <see cref="T:Calculadora.Models.CalculadoraCore"/>
+            amb el valor per defecte "0".
+            </summary>
+        </member>
+        <member name="M:Calculadora.Models.CalculadoraCore.Operacions(System.String)">
+            <summary>
+            Processa l'entrada de l'usuari i actualitza l'expressió actual.
+            </summary>
+            <param name="input">
+            Caràcter o operació introduïts per l'usuari.
+            Valors especials:
+            <list type="bullet">
+              <item><c>"C"</c> — reinicia l'expressió a "0".</item>
+              <item><c>"√"</c> — aplica l'arrel quadrada a l'últim número o parèntesi.</item>
+            </list>
+            </param>
+            <returns>L'expressió actualitzada com a <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Calculadora.Models.CalculadoraCore.AplicarArrel(System.String)">
+            <summary>
+            Transforma l'expressió actual afegint l'operació d'arrel quadrada
+            al darrer número o al darrer grup entre parèntesis.
+            </summary>
+            <remarks>
+            Exemples de transformació:
+            <list type="bullet">
+              <item><c>"9"</c> → <c>"√(9)"</c></item>
+              <item><c>"2+9"</c> → <c>"2+√(9)"</c></item>
+              <item><c>"(2+7)"</c> → <c>"√(2+7)"</c></item>
+            </list>
+            </remarks>
+            <param name="expressio">L'expressió actual sobre la qual s'aplica l'arrel.</param>
+            <returns>L'expressió modificada amb la notació d'arrel quadrada.</returns>
+        </member>
+        <member name="M:Calculadora.Models.CalculadoraCore.Resultat">
+            <summary>
+            Avalua l'expressió matemàtica actual i retorna el resultat.
+            </summary>
+            <remarks>
+            El procés d'avaluació segueix aquests passos:
+            <list type="number">
+              <item>Resol les potències (<c>base**exponent</c>) mitjançant <see cref="M:System.Math.Pow(System.Double,System.Double)"/>.</item>
+              <item>Resol les arrels quadrades (<c>√(...)</c>) avaluant primer el contingut del parèntesi.</item>
+              <item>Passa l'expressió resultant a <see cref="M:System.Data.DataTable.Compute(System.String,System.String)"/> per calcular la resta.</item>
+            </list>
+            Retorna <c>"Error"</c> si l'expressió és invàlida, produeix infinit o NaN,
+            o si es produeix qualsevol excepció durant el càlcul.
+            </remarks>
+            <returns>
+            El resultat com a <see cref="T:System.String"/>, o <c>"Error"</c> si el càlcul falla.
+            </returns>
+        </member>
+        <member name="T:Calculadora.MainWindow">
+            <summary>
+            Finestra principal de l'aplicació Calculadora.
+            Gestiona la interfície d'usuari i la comunicació amb el nucli lògic <see cref="T:Calculadora.Models.CalculadoraCore"/>.
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="F:Calculadora.MainWindow.calculadora">
+            <summary>
+            Instància del nucli lògic de la calculadora.
+            </summary>
+        </member>
+        <member name="M:Calculadora.MainWindow.#ctor">
+            <summary>
+            Inicialitza els components de la finestra principal
+            i crea una nova instància de <see cref="T:Calculadora.Models.CalculadoraCore"/>.
+            </summary>
+        </member>
+        <member name="M:Calculadora.MainWindow.TextBox_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            S'executa quan el <see cref="T:System.Windows.Controls.TextBox"/> es carrega.
+            Posa el focus al camp d'entrada i situa el cursor al final del text.
+            </summary>
+            <param name="sender">L'objecte que ha llançat l'event.</param>
+            <param name="e">Arguments de l'event.</param>
+        </member>
+        <member name="M:Calculadora.MainWindow.TextBox_PreviewTextInput(System.Object,System.Windows.Input.TextCompositionEventArgs)">
+            <summary>
+            Valida l'entrada de text abans d'inserir-la al camp.
+            Només permet dígits, operadors bàsics i símbols matemàtics admesos.
+            Si el camp conté "Error" o "0", el neteja abans d'inserir el nou caràcter.
+            </summary>
+            <param name="sender">L'objecte que ha llançat l'event.</param>
+            <param name="e">Arguments de composició de text.</param>
+        </member>
+        <member name="M:Calculadora.MainWindow.TextBox_PreviewKeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Detecta la tecla <c>Enter</c> per executar el càlcul,
+            equivalent a prémer el botó "=".
+            </summary>
+            <param name="sender">L'objecte que ha llançat l'event.</param>
+            <param name="e">Arguments de la tecla premuda.</param>
+        </member>
+        <member name="M:Calculadora.MainWindow.TextBox_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
+            <summary>
+            S'executa cada vegada que el text del camp canvia.
+            Manté el cursor al final del text en tot moment.
+            </summary>
+            <param name="sender">L'objecte que ha llançat l'event.</param>
+            <param name="e">Arguments del canvi de text.</param>
+        </member>
+        <member name="M:Calculadora.MainWindow.in_out_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
+            <summary>
+            Ajusta dinàmicament la mida de la font del camp d'entrada
+            segons la longitud del text, per evitar desbordaments visuals.
+            </summary>
+            <remarks>
+            Escala de mides aplicada:
+            <list type="bullet">
+              <item>Menys de 6 caràcters → 50px</item>
+              <item>Menys de 10 caràcters → 35px</item>
+              <item>Menys de 20 caràcters → 25px</item>
+              <item>20 o més caràcters → 18px</item>
+            </list>
+            </remarks>
+            <param name="sender">L'objecte que ha llançat l'event.</param>
+            <param name="e">Arguments del canvi de text.</param>
+        </member>
+        <member name="M:Calculadora.MainWindow.BotoClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Gestiona el clic de qualsevol botó numèric o d'operació.
+            Llegeix el valor del <c>Tag</c> del botó, l'envia al nucli lògic
+            i actualitza la pantalla amb el resultat.
+            Si es prem "C", també neteja el text secundari de l'operació.
+            </summary>
+            <param name="sender">El botó que ha estat premut.</param>
+            <param name="e">Arguments de l'event de clic.</param>
+        </member>
+        <member name="M:Calculadora.MainWindow.IgualClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Gestiona el clic del botó "=" o la tecla <c>Enter</c>.
+            Copia l'expressió actual al text secundari, l'envia al nucli lògic
+            per calcular-la i mostra el resultat al camp principal.
+            </summary>
+            <param name="sender">L'objecte que ha llançat l'event.</param>
+            <param name="e">Arguments de l'event.</param>
+        </member>
+        <member name="M:Calculadora.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>
